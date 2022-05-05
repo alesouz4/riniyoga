@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rini Yoga</title>
+    <link rel="shortcut icon" href="../recursos/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="../index.html">
+                <img src="../recursos/rini-yoga-logo.png" alt="Rini Yoga Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mi</a></li>
+                <li><a href="lapractica.html">La Práctica</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Contactame</h1>
+        <section class="contact__flexContainer">
+            <div class="formContainer">
+                <form class="contactForm">
+                    <div class="contactForm__box">
+                        <input class="contactForm__input" type="text" name="nombre_apellido" placeholder="Nombre y Apellido"> 
+                    </div>
+                    <div class="contactForm__box">
+                        <input class="contactForm__input" type="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="contactForm__box">
+                        <label for="intereses">Te interesa:</label>
+                        <select class="contactForm__select" name="intereses">
+                            <option value="presencial">Clases Presenciales</option>
+                            <option value="a_distancia">Clases a Distancia</option>
+                            <option value="talleres">Talleres</option>
+                        </select> 
+                    </div>
+                    <div class="contactForm__box">
+                        <textarea class="contactForm__input" name="mensaje" cols="30" rows="10" placeholder="Dejame tu mensaje"></textarea>
+                    </div>
+                    <div class="contactForm__box">
+                        <input class="contactForm__btn" type="submit" value="Enviar Formulario">
+                    </div>
+                </form>
+            </div>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0770470060083!2d-58.493079384771086!3d-34.576916980466386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65c85831987%3A0x3700fd10353d3938!2sAltolaguirre%20%26%20Avenida%20Monroe%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649869431358!5m2!1ses!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__socialMedia">
+            <img src="../recursos/logo-facebook.png" alt="Logo Facebook">
+            <img src="../recursos/logo-instagram.png" alt="Logo Instagram">
+            <img src="../recursos/logo-youtube.png" alt="Logo Youtube">
+        </div>
+        <p class="footer__disclaimer">Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
