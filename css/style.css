@@ -197,6 +197,7 @@ h2 {
 .gallery__flexContainer {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 .laPractica__gridGallery {
@@ -217,27 +218,27 @@ h2 {
 }
 
 .gallery__firstChild {
-    grid-area: gallery__firstChild;
+    grid-area: "gallery__firstChild";
 }
 
 .gallery__secondChild {
-    grid-area: gallery__secondChild;
+    grid-area: "gallery__secondChild";
 }
 
 .gallery_thirdChild {
-    grid-area: gallery__thirdChild;
+    grid-area: "gallery__thirdChild";
 }
 
 .gallery__fourthChild {
-    grid-area: gallery__fourthChild;
+    grid-area: "gallery__fourthChild";
 }
 
 .gallery__fifthChild {
-    grid-area: gallery__fifthChild;
+    grid-area: "gallery__fifthChild";
 }
 
 .gallery__sixthChild {
-    grid-area: gallery__sixthChild;
+    grid-area: "gallery__sixthChild";
 }
 
 .gallery__style img:hover {
@@ -255,15 +256,15 @@ h2 {
 }    
 
 .talleres__firstChild {
-    grid-area: talleres__firstChild;
+    grid-area: "talleres__firstChild";
 }
 
 .talleres__secondChild {
-    grid-area: talleres__secondChild;
+    grid-area: "talleres__secondChild";
 }
 
 .talleres__thirdChild {
-    grid-area: talleres__thirdChild;
+    grid-area: "talleres__thirdChild";
 }
 
 .talleres__gridContainer div {
@@ -354,7 +355,6 @@ h2 {
     .main__p {
         margin: 0px 25px;
         padding: 20px 10px;
-        margin-bottom: 15px;
     }
     
     h1 {
@@ -363,7 +363,6 @@ h2 {
     
     p {
         font-size: 1rem;
-        text-align: justify;
     }
     
     .title {
@@ -376,7 +375,6 @@ h2 {
     }
     
     .aboutMe p {
-        align-self: center;
         width: 100%;
         padding: 10px 25px;
     }
@@ -384,7 +382,7 @@ h2 {
     .fotoPersonal {
         align-self: center;
         width: 40vw;
-        margin-bottom: 25px;
+        margin: 0px 0px 25px 0px;
     }
     
     .laPractica h2 {
@@ -401,6 +399,10 @@ h2 {
         padding: 20px 10px;
     }
     
+    .gallery__flexContainer {
+        margin-bottom: 0px;
+    }
+
     .laPractica__gridGallery {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "gallery__firstChild"
@@ -411,8 +413,11 @@ h2 {
                             "gallery__sixthChild";
     }
     
+    .laPractica__iframe {
+        width: 80vw;
+    }
+
     .talleres__gridContainer {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "talleres__firstChild"
                             "talleres__secondChild"
@@ -439,41 +444,55 @@ h2 {
     }
     
     .contactForm__input {
-        width: 60vw;
+        width: 80vw;
     }
     
     .contactForm__select {
-        width: 40vw;
+        width: 60vw;
     }
     
     .contactForm__btn {
-        width: 60vw;
+        width: 80vw;
     }
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
-    .nav__links li a {
-        font-size: 6px;
+    .header__logo img {
+        width: 60px;
     }
-}
-/* 
+
+    .nav__links li a {
+        font-size: 7.5px;
+    }
+    
     .main__image {
         max-width: 80vw;
     }
     
     .main__p {
         margin: 0px 25px;
-        padding: 20px 10px;
+        padding: 10px 10px;
         margin-bottom: 15px;
     }
     
+    .footer__socialMedia img {
+        width: 60px;
+    }
+    
+    .footer__disclaimer {
+        font-size: 0.7rem;
+    }
+
     h1 {
         font-size: 1rem;
     }
     
     p {
         font-size: 0.8rem;
-        text-align: justify;
+    }
+
+    button {
+        font-size: 1rem;
     }
     
     .title {
@@ -486,15 +505,14 @@ h2 {
     }
     
     .aboutMe p {
-        align-self: center;
         width: 100%;
         padding: 10px 25px;
     }
-    
+
     .fotoPersonal {
         align-self: center;
-        width: 40vw;
-        margin-bottom: 25px;
+        width: 60vw;
+        margin: 0px 0px 25px 0px;
     }
     
     .laPractica h2 {
@@ -503,14 +521,18 @@ h2 {
     }
     
     h2 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
     
     .laPractica p {
         margin: 0px 25px;
-        padding: 20px 10px;
+        padding: 5px 10px 20px 10px;
     }
     
+    .gallery__flexContainer {
+        margin-bottom: 0px;
+    }
+
     .laPractica__gridGallery {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "gallery__firstChild"
@@ -521,8 +543,15 @@ h2 {
                             "gallery__sixthChild";
     }
     
+    .gallery__style img {
+        width: 80vw;
+    }
+
+    .laPractica__iframe {
+        width: 80vw;
+    }
+
     .talleres__gridContainer {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "talleres__firstChild"
                             "talleres__secondChild"
@@ -536,6 +565,7 @@ h2 {
 
     .talleres__gridContainer div p {
         padding: 5px 20px 20px 20px;
+        font-size: 0.8rem;
     }
     
     .contact__flexContainer {
@@ -549,14 +579,19 @@ h2 {
     }
     
     .contactForm__input {
-        width: 60vw;
+        width: 80vw;
     }
     
     .contactForm__select {
-        width: 40vw;
+        width: 51vw;
+        margin: 5px 0px;
     }
     
     .contactForm__btn {
-        width: 60vw;
+        width: 80vw;
     }
-} */
+
+    .location__iframe {
+        width: 80vw;
+    }
+}
