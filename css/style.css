@@ -338,6 +338,10 @@ h2 {
     font-weight: bold;
 }
 
+.contactForm__btn:hover {
+    background-color: #4c075c;
+}
+
 .location {
     display: flex;
     align-self: center;
