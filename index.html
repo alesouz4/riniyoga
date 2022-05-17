@@ -7,36 +7,74 @@
     <title>Rini Yoga</title>
     <link rel="shortcut icon" href="./recursos/favicon-16x16.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="./recursos/rini-yoga-logo.png" alt="Rini Yoga Logo">
-            </a>  
-        </div> 
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./paginas/sobremi.html">Sobre Mi</a></li>
-                <li><a href="./paginas/lapractica.html">La Práctica</a></li>
-                <li><a href="./paginas/talleres.html">Talleres</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-image:linear-gradient(to top, #4e2b55f8, #2d0c35);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                <img class="headerLogo" src="./recursos/rini-yoga-logo.png" alt="Rini Yoga Logo" width="50" height="50">
+                Rini Yoga</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" href="./paginas/sobremi.html">Sobre Mi</a>
+                            <a class="nav-link" href="./paginas/lapractica.html">La Práctica</a>
+                            <a class="nav-link" href="./paginas/talleres.html">Talleres</a>
+                            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+            </div>    
         </nav>
     </header>
     <main>
-        <div class="main__imageContainer">
-            <img class="main__image" src="./recursos/rina-img-inicio.jpg" alt="Rini Yoga">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./recursos/rini-carousel-01.jpg" class="d-block w-100" alt="Rini Yoga">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenidos a Rini Yoga</h5>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./recursos/rini-carousel-02.jpg" class="d-block w-100" alt="Rini Yoga">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenidos a Rini Yoga</h5>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./recursos/rini-carousel-03.jpg" class="d-block w-100" alt="Rini Yoga">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenidos a Rini Yoga</h5>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <section>
             <h1 class="main__title">Hatha Yoga Presencial y a Distancia</h1>
-            <p class="main__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laborum tenetur! Tempora veritatis atque at distinctio nam itaque suscipit cum voluptate iusto saepe soluta, magni assumenda enim, adipisci eaque. Maiores, amet aspernatur soluta et quasi earum laboriosam molestias sint nobis quibusdam perferendis omnis necessitatibus libero eius rem nostrum! Quas rerum odio obcaecati aperiam animi molestiae, magni amet, vitae officia deleniti voluptas ipsa veritatis esse minus! Corporis quidem praesentium asperiores! Numquam illo, praesentium adipisci deleniti magni fuga. Quod repudiandae dolore aspernatur debitis fugit doloribus enim aliquam vel, numquam fugiat quis voluptas ipsa nemo repellat neque eius hic aut? Sunt, debitis necessitatibus!
+            <p class="main__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laborum tenetur! Tempora veritatis atque at distinctio nam itaque suscipit cum voluptate iusto saepe soluta, magni assumenda enim, adipisci eaque. Maiores, amet aspernatur soluta et quasi earum laboriosam molestias sint nobis quibusdam perferendis omnis necessitatibus libero eius rem nostrum! Quas rerum odio obcaecati aperiam animi molestiae, magni amet, vitae officia deleniti voluptas ipsa veritatis esse minus! Corporis quidem praesentium asperiores! Numquam illo, praesentium adipisci deleniti magni fuga. Quod repudiandae dolore aspernatur debitis fugit doloribus enim aliquam vel, numquam fugiat quis voluptas ipsa nemo repellat neque eius hic aut? Sunt, debitis necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla quam laudantium! Aut dolor dolorem, veniam expedita sed laudantium, asperiores qui vel ipsa quasi officia ipsum cum fuga placeat eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti debitis sapiente tempore quod ratione, voluptates odio blanditiis eaque sequi ex rerum! Delectus quasi assumenda laboriosam quibusdam dolorem accusantium eveniet magnam? 
             </p>         
         </section>
             <div data-aos="zoom-in" class="btn">
-                <a href="./paginas/contacto.html"><button>Contactame</button></a>
+                <a href="./paginas/contacto.html"><button class="contactButton">Contactame</button></a>
             </div>
     </main>
     <footer>
@@ -51,5 +89,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

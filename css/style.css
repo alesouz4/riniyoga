@@ -12,71 +12,47 @@ body {
 
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-image: linear-gradient(to top, #4e2b55f8, #2d0c35);
-    border-bottom: 1px solid #000000;
 }
 
-.header__logo {
-    display: flex;
-}
 
-.header__logo img {
-    width: 75px;
-    padding: 15px;
+.headerLogo {
     transition: 0.5s;
 }
 
-.header__logo img:hover {
+.headerLogo:hover {
     filter: invert(1);
 }
 
-.nav__links {
-    display: flex;
-    margin-right: 15px;
+nav {
+    padding: 0px 15px;
 }
 
-.nav__links li {
-    display: flex;
-    padding: 10px;
-    list-style-type: none;
-}
-
-.nav__links li a {
-    color: #d0cbd3;
-    font-size: 20px;
+.nav-link {
+    color: #e0dce2;
+    font-size: 17px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    transition: 0.5s;
 }
 
-.nav__links li a:hover {
-    color:#ffffff;
-    font-weight: 500;
-}
-
-.main__imageContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.main__image {
-    max-width: 58vw;
+h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 2px 3px #3d054a;
 }
 
 .main__title {
     display: flex;
     justify-content: center;
-    margin: 10px 0px;
+    padding: 20px 0px 10px 0px;
 }
 
 .main__p {
     display: flex;
     justify-content: center;
-    padding: 0px 150px;
+    padding: 0px 25px;
     margin-bottom: 15px;
 }
 
@@ -86,7 +62,7 @@ header {
     margin-top: 40px;
 }
 
-button {
+.contactButton {
     padding: 10px;
     background-color: #000;
     color: #d0cbd3;
@@ -95,10 +71,10 @@ button {
     font-size: 1.25rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
-    transition: 0.5s;
+    transition:0.5s;
 }
 
-button:hover {
+.contactButton:hover {
     background-color: #3d054a;
 }
 
@@ -159,13 +135,22 @@ p {
 .aboutMe p {
     align-self: center;
     width: 50%;
+    padding: 25px;
     text-align: justify;
 }
 
+.container__fotoPersonal {
+    display: flex;
+    width: 400px;
+    height: 600px;
+    padding: 0px 25px;
+}
+
 .fotoPersonal {
-    width: 24.5vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50px;
-    margin-left: 25px;
 }
 
 .laPractica {
@@ -241,8 +226,12 @@ h2 {
     grid-area: "gallery__sixthChild";
 }
 
+.gallery__style img {
+    border-radius: 50px;
+}
+
 .gallery__style img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .talleres__gridContainer {
@@ -300,7 +289,6 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: fit-content;
     margin: 20px;
     padding: 10px;
 }
@@ -309,6 +297,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 600px;
     font-family: 'Roboto', sans-serif; 
     font-weight: 500;
 }
@@ -316,7 +305,7 @@ h2 {
 .contactForm__input {
     margin: 5px;
     padding: 10px;
-    width: 31.25vw;
+    width: 600px;
     border: none;
     border-bottom: 3px solid #6d0244;
     font-family: 'Roboto', sans-serif; 
@@ -325,21 +314,17 @@ h2 {
 .contactForm__select {
     margin: 5px;
     padding: 10px;
-    width: 21.87vw;
+    width: 450px;
 }
 
 .contactForm__btn {
     margin: 5px;
     padding: 10px;
-    width: 31.25vw;
+    width: 600px;
     background-color: #6d0244;
     color: #d0cbd3;
     border: none;
     font-weight: bold;
-}
-
-.contactForm__btn:hover {
-    background-color: #4c075c;
 }
 
 .location {
@@ -348,19 +333,6 @@ h2 {
 }
 
 @media (min-width: 541px) and (max-width: 720px) {
-    .nav__links li a {
-        font-size: 18px;
-    }
-
-    .main__image {
-        max-width: 80vw;
-    }
-    
-    .main__p {
-        margin: 0px 25px;
-        padding: 20px 10px;
-    }
-    
     h1 {
         font-size: 1.5rem;
     }
@@ -382,11 +354,12 @@ h2 {
         width: 100%;
         padding: 10px 25px;
     }
-    
-    .fotoPersonal {
+
+    .container__fotoPersonal {
         align-self: center;
-        width: 40vw;
-        margin: 0px 0px 25px 0px;
+        width: 300px;
+        height: 500px;
+        padding-bottom: 10px;
     }
     
     .laPractica h2 {
@@ -415,6 +388,10 @@ h2 {
                             "gallery__fourthChild" 
                             "gallery__fifthChild" 
                             "gallery__sixthChild";
+    }
+
+    .gallery__style img {
+        width: 80vw;
     }
     
     .laPractica__iframe {
@@ -458,27 +435,13 @@ h2 {
     .contactForm__btn {
         width: 80vw;
     }
+
+    .location__iframe {
+        width: 70vw;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
-    .header__logo img {
-        width: 60px;
-    }
-
-    .nav__links li a {
-        font-size: 7.5px;
-    }
-    
-    .main__image {
-        max-width: 80vw;
-    }
-    
-    .main__p {
-        margin: 0px 25px;
-        padding: 10px 10px;
-        margin-bottom: 15px;
-    }
-    
     .footer__socialMedia img {
         width: 60px;
     }
@@ -513,12 +476,12 @@ h2 {
         padding: 10px 25px;
     }
 
-    .fotoPersonal {
+    .container__fotoPersonal {
         align-self: center;
-        width: 60vw;
-        margin: 0px 0px 25px 0px;
+        width: 250px;
+        height: 400px;    
     }
-    
+
     .laPractica h2 {
         margin-left: 15px;
         padding: 20px 0px 0px 20px;
@@ -596,6 +559,6 @@ h2 {
     }
 
     .location__iframe {
-        width: 80vw;
+        width: 70vw;
     }
 }
