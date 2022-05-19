@@ -135,8 +135,9 @@ p {
 
 .aboutMe p {
     align-self: center;
-    width: 50rem;
-    padding: 0rem 1.5rem;
+    width: 60rem;
+    padding: 0rem 2rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -151,7 +152,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 3.12rem;
 }
 
 .laPractica {
@@ -171,17 +172,19 @@ h2 {
 }
 
 .laPractica p {
-    margin: 0rem 2rem 1.5rem 2rem;
+    margin: 0rem 2rem 0.5rem 2rem;
 }
 
 .laPractica iframe { 
     align-self: center;
+    margin-top: 1rem;
 }
 
 .gallery__flexContainer {
     display: flex;
     justify-content: center;
     margin: 1.5rem 0rem 1.5rem 0rem;
+    width: auto;
 }
 
 .laPractica__gridGallery {
@@ -192,6 +195,7 @@ h2 {
     width: fit-content;
     gap: 0.6rem;
     padding: 0.6rem;
+    flex-wrap: wrap;
 }
 
 .gallery__style {
@@ -262,10 +266,12 @@ h2 {
 }
 
 .talleres__gridContainer div img {
+    object-fit: cover;
     width: 15vw;
-    height: 30vh;
+    height: auto;
     margin-bottom: 0.3rem;
     border-radius: 100%;
+    flex-wrap: nowrap;
 }
 
 .talleres__gridContainer div h2 {
@@ -280,17 +286,16 @@ h2 {
 .contact__flexContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: fit-content;
 }
 
 .formContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    width: fit-content;
-    margin: 20px;
-    padding: 10px;
+    margin: 0rem 1.25rem;
+    padding: 0rem 0.6rem;
 }
 
 .contactForm {
@@ -298,28 +303,29 @@ h2 {
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', sans-serif; 
+    font-size: 1rem;
     font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .contactForm__input {
-    margin: 5px;
-    padding: 10px;
-    width: 31.25vw;
+    margin: 0.3rem;
+    padding: 0.6rem;
+    width: 500px;
     border: none;
-    border-bottom: 3px solid #6d0244;
-    font-family: 'Roboto', sans-serif; 
+    border-bottom: 0.18rem solid #6d0244;
 }
 
 .contactForm__select {
-    margin: 5px;
-    padding: 10px;
-    width: 21.87vw;
+    margin: 0.3rem;
+    padding: 0.6rem;
+    width: 350px;
 }
 
 .contactForm__btn {
-    margin: 5px;
-    padding: 10px;
-    width: 31.25vw;
+    margin: 0.3rem;
+    padding: 0.6rem;
+    width: 500px;
     background-color: #6d0244;
     color: #d0cbd3;
     border: none;
@@ -332,53 +338,23 @@ h2 {
 }
 
 @media (min-width: 541px) and (max-width: 720px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    p {
-        font-size: 1rem;
-    }
-    
-    .title {
-        margin: 0px 0px 15px 15px;
-        padding: 20px 0px 0px 20px;
-    }
-    
     .aboutMe {
         flex-direction: column-reverse;
     }
     
     .aboutMe p {
-        width: 100%;
-        padding: 10px 25px;
+        width: 100vw;
+        padding: 0.6rem 1.5rem;
+        font-size: 1.25rem;
     }
 
     .container__fotoPersonal {
         align-self: center;
-        width: 300px;
-        height: 500px;
-        padding-bottom: 10px;
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 1rem;
     }
     
-    .laPractica h2 {
-        margin-left: 15px;
-        padding: 20px 0px 0px 20px;
-    }
-    
-    h2 {
-        font-size: 1.2rem;
-    }
-    
-    .laPractica p {
-        margin: 0px 25px;
-        padding: 20px 10px;
-    }
-    
-    .gallery__flexContainer {
-        margin-bottom: 0px;
-    }
-
     .laPractica__gridGallery {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "gallery__firstChild"
@@ -390,7 +366,7 @@ h2 {
     }
 
     .gallery__style img {
-        width: 80vw;
+        width: 60vw;
     }
     
     .laPractica__iframe {
@@ -406,21 +382,20 @@ h2 {
     
     .talleres__gridContainer div img {
         width: 30vw;
-        height: 20vh;
     }
 
     .talleres__gridContainer div p {
-        padding: 5px 20px 20px 20px;
-    }
-    
+        font-size: 1.25rem;
+    }    
+
     .contact__flexContainer {
-        width: 100%;
+        width: 100vw;
     }
     
     .formContainer {
-        width: 100%;
-        margin: 0px 0px 10px 0px;
-        padding: 0px;
+        width: 100vw;
+        margin: 0rem 0rem 0.6rem 0rem;
+        padding: 0rem;
     }
     
     .contactForm__input {
@@ -434,17 +409,17 @@ h2 {
     .contactForm__btn {
         width: 80vw;
     }
+
+    .location__iframe {
+        width: 70vw;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
-    .footer__socialMedia img {
-        width: 60px;
+    .main__title {
+        padding: 1rem 1.5rem 0rem 1.5rem;
     }
     
-    .footer__disclaimer {
-        font-size: 0.7rem;
-    }
-
     h1 {
         font-size: 1rem;
     }
@@ -453,46 +428,25 @@ h2 {
         font-size: 0.8rem;
     }
 
-    button {
-        font-size: 1rem;
-    }
-    
-    .title {
-        margin: 0px 0px 15px 15px;
-        padding: 20px 0px 0px 20px;
-    }
-    
     .aboutMe {
         flex-direction: column-reverse;
     }
     
     .aboutMe p {
-        width: 100%;
-        padding: 10px 25px;
+        width: 100vw;
+        padding: 0.6rem 1.5rem;
+        font-size: 0.8rem;
     }
 
     .container__fotoPersonal {
         align-self: center;
-        width: 250px;
-        height: 400px;    
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 1rem;
     }
 
-    .laPractica h2 {
-        margin-left: 15px;
-        padding: 20px 0px 0px 20px;
-    }
-    
     h2 {
-        font-size: 0.8rem;
-    }
-    
-    .laPractica p {
-        margin: 0px 25px;
-        padding: 5px 10px 20px 10px;
-    }
-    
-    .gallery__flexContainer {
-        margin-bottom: 0px;
+        font-size: 0.9rem;
     }
 
     .laPractica__gridGallery {
@@ -506,7 +460,7 @@ h2 {
     }
     
     .gallery__style img {
-        width: 80vw;
+        width: 60vw;
     }
 
     .laPractica__iframe {
@@ -522,31 +476,33 @@ h2 {
     
     .talleres__gridContainer div img {
         width: 30vw;
-        height: 20vh;
     }
 
     .talleres__gridContainer div p {
-        padding: 5px 20px 20px 20px;
         font-size: 0.8rem;
     }
     
     .contact__flexContainer {
-        width: 100%;
+        width: 100vw;
     }
     
     .formContainer {
-        width: 100%;
-        margin: 0px 0px 10px 0px;
-        padding: 0px;
+        width: 100vw;
+        margin: 0rem 0rem 0.6rem 0rem;
+        padding: 0rem;
     }
     
+    .contactForm {
+        font-size: 0.8rem;
+    }
+
     .contactForm__input {
         width: 80vw;
     }
     
     .contactForm__select {
-        width: 51vw;
-        margin: 5px 0px;
+        width: 55vw;
+        margin: 0.3rem 0rem;
     }
     
     .contactForm__btn {
@@ -554,9 +510,37 @@ h2 {
     }
 
     .location__iframe {
-        width: 80vw;
-    }
-    .location__iframe {
         width: 70vw;
     }
+}
+
+@media (min-width: 720px) and (max-width: 960px) {
+    .laPractica__gridGallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "gallery__firstChild"
+                            "gallery__secondChild"
+                            "gallery__thirdChild"
+                            "gallery__fourthChild" 
+                            "gallery__fifthChild" 
+                            "gallery__sixthChild";
+    }
+
+    .gallery__style img {
+        width: 60vw;
+    }
+    
+    .talleres__gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "talleres__firstChild"
+                            "talleres__secondChild"
+                            "talleres__thirdChild";
+    }   
+
+    .talleres__gridContainer div img {
+        width: 30vw;
+    }
+
+    .talleres__gridContainer div p {
+        font-size: 1.25rem;
+    } 
 }
