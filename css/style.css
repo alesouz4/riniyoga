@@ -1,546 +1,368 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&family=Ms+Madi&family=Roboto:wght@100;400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #d0cbd3;
-}
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&family=Ms+Madi&family=Roboto:wght@100;400;700&display=swap");
 header {
-    background-image: linear-gradient(to top, #4e2b55f8, #2d0c35);
-}
-
+  background-image: linear-gradient(to top, #4e2b55f8, #2d0c35); }
 
 .headerLogo {
-    transition: 0.5s;
-}
-
-.headerLogo:hover {
-    filter: invert(1);
-}
+  transition: 0.5s; }
+  .headerLogo:hover {
+    filter: invert(1); }
 
 nav {
-    padding: 0rem 1rem;
-}
+  padding: 0rem 1rem; }
 
 .nav-link {
-    color: #e0dce2;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
+  color: #e0dce2;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none; }
 
 h5 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 0.05rem 0.12rem 0.18rem #3d054a;
-}
-
-.main__title {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 1rem 0rem 1rem;
-}
-
-.main__p {
-    display: flex;
-    justify-content: center;
-    padding: 0rem 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-}
-
-.contactButton {
-    padding: 0.6rem;
-    background-color: #000;
-    color: #d0cbd3;
-    border-radius: 0.6rem;
-    border-style: hidden;
-    font-size: 1.25rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: pointer;
-    transition:0.5s;
-}
-
-.contactButton:hover {
-    background-color: #3d054a;
-}
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0.05rem 0.12rem 0.18rem #3d054a; }
 
 footer {
-    margin-top: 5rem;
-    border-top: 0.05rem solid #000000;
-    background-image: linear-gradient(to top, #4e2b55f8, #2d0c35);
-}
+  margin-top: 5rem;
+  border-top: 0.05rem solid #000000;
+  background-image: linear-gradient(to top, #4e2b55f8, #2d0c35); }
 
 .footer__socialMedia {
-    display: flex;
-    justify-content: center;
-}
-
-.footer__socialMedia img {
+  display: flex;
+  justify-content: center; }
+  .footer__socialMedia img {
     width: 4.5rem;
     padding: 1rem;
-    transition: 0.5s;
-}
-
-.footer__socialMedia img:hover {
-    filter: invert(1);
-}
+    transition: 0.5s; }
+    .footer__socialMedia img:hover {
+      filter: invert(1); }
 
 .footer__disclaimer {
-    padding: 0.5rem;
-}
-
-.footer__disclaimer p {
+  padding: 0.5rem; }
+  .footer__disclaimer p {
     color: #d0cbd3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 0.9rem;
-    text-align: center;
-}
+    text-align: center; }
 
-h1 {
-    color: #3d054a;
-    font-weight: bold;
-    font-size: 1.9rem;
-    font-family: 'Roboto', sans-serif;
-}
+.btn {
+  display: flex;
+  justify-content: center; }
 
-p {
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    text-align: justify;
-}
-
-.title {
-    margin: 1.5rem 0rem 1.5rem 2rem;
-}
-
-.aboutMe {
-    display: flex;
-    justify-content: center;
-}
-
-.aboutMe p {
-    align-self: center;
-    width: 60rem;
-    padding: 0rem 2rem;
-    font-size: 1rem;
-    text-align: justify;
-}
-
-.container__fotoPersonal {
-    display: flex;
-    width: 25rem;
-    height: 34.35rem;
-    padding: 0rem 1.5rem;
-}
-
-.fotoPersonal {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 3.12rem;
-}
-
-.laPractica {
-    display: flex;
-    flex-direction: column;
-}
-
-.laPractica h2 {
-    margin: 1.5rem 0rem 1rem 2rem;
-}
-
-h2 {
-    color: #4c075c;
-    font-weight: bold;
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif; 
-}
-
-.laPractica p {
-    margin: 0rem 2rem 0.5rem 2rem;
-}
-
-.laPractica iframe { 
-    align-self: center;
-    margin-top: 1rem;
-}
+.contactButton {
+  padding: 0.6rem;
+  background-color: #000;
+  color: #d0cbd3;
+  border-radius: 0.6rem;
+  border-style: hidden;
+  font-size: 1.25rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  transition: 0.5s; }
+  .contactButton:hover {
+    background-color: #3d054a; }
 
 .gallery__flexContainer {
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem 0rem 1.5rem 0rem;
-    width: auto;
-}
-
-.laPractica__gridGallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "gallery__firstChild gallery__secondChild gallery__thirdChild"
-                        "gallery__fourthChild gallery__fifthChild gallery__sixthChild";
-    width: fit-content;
-    gap: 0.6rem;
-    padding: 0.6rem;
-    flex-wrap: wrap;
-}
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  width: auto; }
 
 .gallery__style {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .gallery__style img {
+    border-radius: 3rem;
+    transition: 0.5s; }
+    .gallery__style img:hover {
+      transform: scale(1.2); }
 
 .gallery__firstChild {
-    grid-area: "gallery__firstChild";
-}
+  grid-area: "gallery__firstChild"; }
 
 .gallery__secondChild {
-    grid-area: "gallery__secondChild";
-}
+  grid-area: "gallery__secondChild"; }
 
-.gallery_thirdChild {
-    grid-area: "gallery__thirdChild";
-}
+.gallery__thirdChild {
+  grid-area: "gallery__thirdChild"; }
 
 .gallery__fourthChild {
-    grid-area: "gallery__fourthChild";
-}
+  grid-area: "gallery__fourthChild"; }
 
 .gallery__fifthChild {
-    grid-area: "gallery__fifthChild";
-}
+  grid-area: "gallery__fifthChild"; }
 
 .gallery__sixthChild {
-    grid-area: "gallery__sixthChild";
-}
-
-.gallery__style img {
-    border-radius: 3rem;
-}
-
-.gallery__style img:hover {
-    transform: scale(1.2);
-}
-
-.talleres__gridContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "talleres__firstChild talleres__secondChild talleres__thirdChild";
-    width: fit-content;
-    gap: 0.3rem;
-    padding: 0.6rem;
-    margin: 0.6rem 0rem;
-}    
-
-.talleres__firstChild {
-    grid-area: "talleres__firstChild";
-}
-
-.talleres__secondChild {
-    grid-area: "talleres__secondChild";
-}
-
-.talleres__thirdChild {
-    grid-area: "talleres__thirdChild";
-}
-
-.talleres__gridContainer div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.3rem;
-}
-
-.talleres__gridContainer div img {
-    object-fit: cover;
-    width: 15vw;
-    height: auto;
-    margin-bottom: 0.3rem;
-    border-radius: 100%;
-    flex-wrap: nowrap;
-}
-
-.talleres__gridContainer div h2 {
-    padding-top: 0.6rem;
-}
-
-.talleres__gridContainer div p {
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-.contact__flexContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-}
+  grid-area: "gallery__sixthChild"; }
 
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0rem 1.25rem;
-    padding: 0rem 0.6rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 1.25rem;
+  padding: 0rem 0.6rem; }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.contactForm__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem; }
+  .contactForm__input {
     margin: 0.3rem;
     padding: 0.6rem;
     width: 500px;
     border: none;
-    border-bottom: 0.18rem solid #6d0244;
-}
-
-.contactForm__select {
+    border-bottom: 0.18rem solid #6d0244; }
+  .contactForm__select {
     margin: 0.3rem;
     padding: 0.6rem;
-    width: 350px;
-}
-
-.contactForm__btn {
+    width: 350px; }
+  .contactForm__btn {
     margin: 0.3rem;
     padding: 0.6rem;
     width: 500px;
     background-color: #6d0244;
     color: #d0cbd3;
     border: none;
-    font-weight: bold;
-}
+    font-weight: bold; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #d0cbd3; }
+
+h1 {
+  color: #3d054a;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif; }
+
+h2 {
+  color: #4c075c;
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif; }
+
+p {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  text-align: justify; }
+
+.main__title {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 0rem 1rem; }
+
+.main__p {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.title {
+  margin: 1.5rem 0rem 1.5rem 2rem; }
+
+.aboutMe {
+  display: flex;
+  justify-content: center; }
+  .aboutMe p {
+    align-self: center;
+    width: 60rem;
+    padding: 0rem 2rem;
+    font-size: 1rem;
+    text-align: justify; }
+
+.container__fotoPersonal {
+  display: flex;
+  width: 25rem;
+  height: 34.35rem;
+  padding: 0rem 1.5rem; }
+
+.fotoPersonal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3.12rem; }
+
+.laPractica {
+  display: flex;
+  flex-direction: column; }
+  .laPractica h2 {
+    margin: 1.5rem 0rem 1rem 2rem; }
+  .laPractica p {
+    margin: 0rem 2rem 0.5rem 2rem; }
+  .laPractica iframe {
+    align-self: center;
+    margin-top: 1rem; }
+  .laPractica__gridGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "gallery__firstChild gallery__secondChild gallery__thirdChild" "gallery__fourthChild gallery__fifthChild gallery__sixthChild";
+    width: fit-content;
+    gap: 0.6rem;
+    padding: 0.6rem;
+    flex-wrap: wrap; }
+
+.talleres__gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "talleres__firstChild talleres__secondChild talleres__thirdChild";
+  width: fit-content;
+  gap: 0.3rem;
+  padding: 0.6rem;
+  margin: 0.6rem 0rem; }
+  .talleres__gridContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem; }
+    .talleres__gridContainer div img {
+      object-fit: cover;
+      width: 15vw;
+      height: auto;
+      margin-bottom: 0.3rem;
+      border-radius: 100%;
+      flex-wrap: nowrap; }
+    .talleres__gridContainer div h2 {
+      padding-top: 0.6rem; }
+    .talleres__gridContainer div p {
+      font-size: 1rem;
+      padding: 1rem; }
+
+.talleres__firstChild {
+  grid-area: "talleres__firstChild"; }
+
+.talleres__secondChild {
+  grid-area: "talleres__secondChild"; }
+
+.talleres__thirdChild {
+  grid-area: "talleres__thirdChild"; }
+
+.contact__flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content; }
 
 .location {
-    display: flex;
-    align-self: center;
-}
+  display: flex;
+  align-self: center; }
 
 @media (min-width: 541px) and (max-width: 720px) {
-    .aboutMe {
-        flex-direction: column-reverse;
-    }
-    
+  h1 {
+    font-size: 1.6rem; }
+  .aboutMe {
+    flex-direction: column-reverse; }
     .aboutMe p {
-        width: 100vw;
-        padding: 0.6rem 1.5rem;
-        font-size: 1.25rem;
-    }
-
-    .container__fotoPersonal {
-        align-self: center;
-        width: 100vw;
-        height: 100vw;
-        margin-bottom: 1rem;
-    }
-    
-    .laPractica__gridGallery {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "gallery__firstChild"
-                            "gallery__secondChild"
-                            "gallery__thirdChild"
-                            "gallery__fourthChild" 
-                            "gallery__fifthChild" 
-                            "gallery__sixthChild";
-    }
-
-    .gallery__style img {
-        width: 60vw;
-    }
-    
-    .laPractica__iframe {
-        width: 80vw;
-    }
-
-    .talleres__gridContainer {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "talleres__firstChild"
-                            "talleres__secondChild"
-                            "talleres__thirdChild";
-    }    
-    
+      width: 100vw;
+      padding: 0.6rem 1.5rem;
+      font-size: 1.25rem; }
+  .container__fotoPersonal {
+    align-self: center;
+    width: 100vw;
+    height: 100vw;
+    margin-bottom: 1rem; }
+  .laPractica__gridGallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "gallery__firstChild" "gallery__secondChild" "gallery__thirdChild" "gallery__fourthChild"  "gallery__fifthChild"  "gallery__sixthChild"; }
+  .laPractica__iframe {
+    width: 80vw; }
+  .gallery__style img {
+    width: 80vw; }
+  .talleres__gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "talleres__firstChild" "talleres__secondChild" "talleres__thirdChild"; }
     .talleres__gridContainer div img {
-        width: 30vw;
-    }
-
+      width: 30vw; }
     .talleres__gridContainer div p {
-        font-size: 1.25rem;
-    }    
-
-    .contact__flexContainer {
-        width: 100vw;
-    }
-    
-    .formContainer {
-        width: 100vw;
-        margin: 0rem 0rem 0.6rem 0rem;
-        padding: 0rem;
-    }
-    
-    .contactForm__input {
-        width: 80vw;
-    }
-    
-    .contactForm__select {
-        width: 60vw;
-    }
-    
-    .contactForm__btn {
-        width: 80vw;
-    }
-
-    .location__iframe {
-        width: 70vw;
-    }
-}
+      font-size: 1.25rem; }
+  .contact__flexContainer {
+    width: 100vw; }
+  .formContainer {
+    width: 100vw;
+    margin: 0rem 0rem 0.6rem 0rem;
+    padding: 0rem; }
+  .contactForm__input {
+    width: 80vw; }
+  .contactForm__select {
+    width: 60vw; }
+  .contactForm__btn {
+    width: 80vw; }
+  .location__iframe {
+    width: 70vw; } }
 
 @media (min-width: 320px) and (max-width: 540px) {
-    .main__title {
-        padding: 1rem 1.5rem 0rem 1.5rem;
-    }
-    
-    h1 {
-        font-size: 1rem;
-    }
-    
-    p {
-        font-size: 0.8rem;
-    }
-
-    .aboutMe {
-        flex-direction: column-reverse;
-    }
-    
+  .main__title {
+    padding: 1rem 1.5rem 0rem 1.5rem; }
+  h1 {
+    font-size: 1rem; }
+  h2 {
+    font-size: 0.9rem; }
+  p {
+    font-size: 0.8rem; }
+  .aboutMe {
+    flex-direction: column-reverse; }
     .aboutMe p {
-        width: 100vw;
-        padding: 0.6rem 1.5rem;
-        font-size: 0.8rem;
-    }
-
-    .container__fotoPersonal {
-        align-self: center;
-        width: 100vw;
-        height: 100vw;
-        margin-bottom: 1rem;
-    }
-
-    h2 {
-        font-size: 0.9rem;
-    }
-
-    .laPractica__gridGallery {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "gallery__firstChild"
-                            "gallery__secondChild"
-                            "gallery__thirdChild"
-                            "gallery__fourthChild" 
-                            "gallery__fifthChild" 
-                            "gallery__sixthChild";
-    }
-    
-    .gallery__style img {
-        width: 60vw;
-    }
-
-    .laPractica__iframe {
-        width: 80vw;
-    }
-
-    .talleres__gridContainer {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "talleres__firstChild"
-                            "talleres__secondChild"
-                            "talleres__thirdChild";
-    }    
-    
+      width: 100vw;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.8rem; }
+  .container__fotoPersonal {
+    align-self: center;
+    width: 100vw;
+    height: 100vw;
+    margin-bottom: 1rem; }
+  .laPractica__gridGallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "gallery__firstChild" "gallery__secondChild" "gallery__thirdChild" "gallery__fourthChild"  "gallery__fifthChild"  "gallery__sixthChild"; }
+  .laPractica__iframe {
+    width: 80vw; }
+  .gallery__style img {
+    width: 80vw; }
+  .talleres__gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "talleres__firstChild" "talleres__secondChild" "talleres__thirdChild"; }
     .talleres__gridContainer div img {
-        width: 30vw;
-    }
-
+      width: 30vw; }
     .talleres__gridContainer div p {
-        font-size: 0.8rem;
-    }
-    
-    .contact__flexContainer {
-        width: 100vw;
-    }
-    
-    .formContainer {
-        width: 100vw;
-        margin: 0rem 0rem 0.6rem 0rem;
-        padding: 0rem;
-    }
-    
-    .contactForm {
-        font-size: 0.8rem;
-    }
-
+      font-size: 0.8rem; }
+  .contact__flexContainer {
+    width: 100vw; }
+  .formContainer {
+    width: 100vw;
+    margin: 0rem 0rem 0.6rem 0rem;
+    padding: 0rem; }
+  .contactForm {
+    font-size: 0.8rem; }
     .contactForm__input {
-        width: 80vw;
-    }
-    
+      width: 80vw; }
     .contactForm__select {
-        width: 55vw;
-        margin: 0.3rem 0rem;
-    }
-    
+      width: 55vw;
+      margin: 0.3rem 0rem; }
     .contactForm__btn {
-        width: 80vw;
-    }
-
-    .location__iframe {
-        width: 70vw;
-    }
-}
+      width: 80vw; }
+  .location__iframe {
+    width: 70vw; } }
 
 @media (min-width: 720px) and (max-width: 960px) {
-    .laPractica__gridGallery {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "gallery__firstChild"
-                            "gallery__secondChild"
-                            "gallery__thirdChild"
-                            "gallery__fourthChild" 
-                            "gallery__fifthChild" 
-                            "gallery__sixthChild";
-    }
-
-    .gallery__style img {
-        width: 60vw;
-    }
-    
-    .talleres__gridContainer {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "talleres__firstChild"
-                            "talleres__secondChild"
-                            "talleres__thirdChild";
-    }   
-
+  .laPractica__gridGallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "gallery__firstChild" "gallery__secondChild" "gallery__thirdChild" "gallery__fourthChild"  "gallery__fifthChild"  "gallery__sixthChild"; }
+  .gallery__style img {
+    width: 80vw; }
+  .talleres__gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "talleres__firstChild" "talleres__secondChild" "talleres__thirdChild"; }
     .talleres__gridContainer div img {
-        width: 30vw;
-    }
-
+      width: 30vw; }
     .talleres__gridContainer div p {
-        font-size: 1.25rem;
-    } 
-}
+      font-size: 1.25rem; } }

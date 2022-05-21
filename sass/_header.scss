@@ -1,0 +1,30 @@
+header {
+    background-image: $gradient-color;
+}
+
+
+.headerLogo {
+    transition: $generic-transition;
+        &:hover {
+            filter: invert(1);
+        }
+}
+
+nav {
+    padding: 0rem 1rem;
+}
+
+.nav-link {
+    color: #e0dce2;
+    font-size: $small-fontSize;
+    font-weight: 400;
+    font-family: $principal-font;
+    text-decoration: none;
+}
+
+h5 {
+    font-size: $primary-fontSize;
+    font-weight: bold;
+    font-family: $principal-font;
+    text-shadow: 0.05rem 0.12rem 0.18rem $principal-color;
+}

@@ -1,0 +1,209 @@
+@media (min-width: 541px) and (max-width: 720px) {
+    h1 {
+        font-size: $secondary-fontSize;
+    }
+
+    .aboutMe {
+        flex-direction: column-reverse;
+            p {
+                width: 100vw;
+                padding: 0.6rem 1.5rem;
+                font-size: $standard-fontSize;
+            }
+    }
+    
+    .container__fotoPersonal {
+        align-self: center;
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 1rem;
+    }
+    
+    .laPractica {
+        &__gridGallery {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: "gallery__firstChild"
+                                    "gallery__secondChild"
+                                    "gallery__thirdChild"
+                                    "gallery__fourthChild" 
+                                    "gallery__fifthChild" 
+                                    "gallery__sixthChild";
+        }
+        &__iframe {
+            width: 80vw;
+        }
+    }
+
+    .gallery__style img {
+            width: 80vw;
+    }
+
+    .talleres__gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "talleres__firstChild"
+                            "talleres__secondChild"
+                            "talleres__thirdChild";
+                                div {
+                                    img {
+                                        width: 30vw;
+                                    }
+                                    p {
+                                        font-size: $standard-fontSize;
+                                    }
+                                }
+    }    
+
+    .contact__flexContainer {
+        width: 100vw;
+    }
+    
+    .formContainer {
+        width: 100vw;
+        margin: 0rem 0rem 0.6rem 0rem;
+        padding: 0rem;
+    }
+
+    .contactForm {
+        &__input {
+            width: 80vw;
+        }
+        &__select {
+            width: 60vw;
+        }
+        &__btn {
+            width: 80vw;
+        }
+    }
+    
+    .location__iframe {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    .main__title {
+        padding: 1rem 1.5rem 0rem 1.5rem;
+    }
+    
+    h1 {
+        font-size: $small-fontSize;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+
+    .aboutMe {
+        flex-direction: column-reverse;
+            p {
+                width: 100vw;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.8rem;
+            }
+    }
+    
+    .container__fotoPersonal {
+        align-self: center;
+        width: 100vw;
+        height: 100vw;
+        margin-bottom: 1rem;
+    }
+
+    .laPractica {
+        &__gridGallery {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: "gallery__firstChild"
+                                "gallery__secondChild"
+                                "gallery__thirdChild"
+                                "gallery__fourthChild" 
+                                "gallery__fifthChild" 
+                                "gallery__sixthChild";
+        }
+        &__iframe {
+            width: 80vw;
+        }
+    }
+
+    .gallery__style img {
+        width: 80vw;
+    }
+
+    .talleres__gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "talleres__firstChild"
+                            "talleres__secondChild"
+                            "talleres__thirdChild";
+                                div {
+                                    img {
+                                        width: 30vw;
+                                    }
+                                    p {
+                                        font-size: 0.8rem;
+                                    }
+                                }
+    }    
+    
+    .contact__flexContainer {
+        width: 100vw;
+    }
+    
+    .formContainer {
+        width: 100vw;
+        margin: 0rem 0rem 0.6rem 0rem;
+        padding: 0rem;
+    }
+    
+    .contactForm {
+        font-size: 0.8rem;
+            &__input {
+                width: 80vw;
+            }
+            &__select {
+                width: 55vw;
+                margin: 0.3rem 0rem;
+            }
+            &__btn {
+                width: 80vw;
+            }
+    }
+
+    .location__iframe {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 960px) {
+    .laPractica__gridGallery {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: "gallery__firstChild"
+                                "gallery__secondChild"
+                                "gallery__thirdChild"
+                                "gallery__fourthChild" 
+                                "gallery__fifthChild" 
+                                "gallery__sixthChild";
+    }
+
+    .gallery__style img {
+        width: 80vw;
+    }
+
+
+    .talleres__gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "talleres__firstChild"
+                            "talleres__secondChild"
+                            "talleres__thirdChild";
+                                div { 
+                                    img {
+                                        width: 30vw;
+                                    }
+                                    p {
+                                        font-size: $standard-fontSize;
+                                    }    
+                                }    
+    }
+}

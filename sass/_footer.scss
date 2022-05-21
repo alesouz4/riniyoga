@@ -1,0 +1,30 @@
+footer {
+    margin-top: 5rem;
+    border-top: 0.05rem solid #000000;
+    background-image: $gradient-color;
+}
+
+.footer {
+    &__socialMedia {
+        display: flex;
+        justify-content: center;
+            img {
+                width: 4.5rem;
+                padding: 1rem;
+                transition: $generic-transition;
+                    &:hover {
+                        filter: invert(1);
+                    }
+            }
+    }
+    &__disclaimer {
+        padding: 0.5rem;
+            p {
+                color: #d0cbd3;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+    }
+}

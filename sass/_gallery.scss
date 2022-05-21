@@ -1,0 +1,38 @@
+.gallery {
+    &__flexContainer {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        width: auto;
+    }
+    &__style {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+            img {
+                border-radius: 3rem;
+                transition: $generic-transition;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+            }
+    }
+    &__firstChild {
+        grid-area: "gallery__firstChild";
+    }
+    &__secondChild {
+        grid-area: "gallery__secondChild";
+    }
+    &__thirdChild {
+        grid-area: "gallery__thirdChild";
+    }
+    &__fourthChild {
+        grid-area: "gallery__fourthChild";
+    }
+    &__fifthChild {
+        grid-area: "gallery__fifthChild";
+    }
+    &__sixthChild {
+        grid-area: "gallery__sixthChild";
+    }
+}

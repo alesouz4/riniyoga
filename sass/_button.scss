@@ -1,0 +1,19 @@
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contactButton {
+    padding: 0.6rem;
+    background-color: #000;
+    color: #d0cbd3;
+    border-radius: 0.6rem;
+    border-style: hidden;
+    font-size: 1.25rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: $generic-transition;
+        &:hover {
+            background-color: $principal-color;
+        }
+}
