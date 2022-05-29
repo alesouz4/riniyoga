@@ -17,18 +17,27 @@ body {
     background-color: #d0cbd3;
 }
 
-h1 {
-    color: $principal-color;
+@mixin titulos ($color, $font-size) {
+    color: $color;
     font-weight: bold;
-    font-size: $primary-fontSize;
+    font-size: $font-size;
     font-family: $principal-font;
 }
 
+.selection {
+    &::selection {
+        background-color:#e2dbe6;
+    }
+}
+
+h1 {
+    @include titulos ($principal-color, $primary-fontSize);
+    @extend .selection;
+}
+
 h2 {
-    color: $secondary-color;
-    font-weight: bold;
-    font-size: $secondary-fontSize;
-    font-family: $principal-font; 
+    @include titulos ($secondary-color, $secondary-fontSize);
+    @extend .selection;
 }
 
 p {
@@ -36,20 +45,28 @@ p {
     font-family: $principal-font;
     font-size: $standard-fontSize;
     text-align: justify;
+    @extend .selection;
+        strong {
+            @extend .selection;
+        }
+        em {
+            @extend .selection;
+        }
 }
 
 .main {
-    &__title {
-        display: flex;
-        justify-content: center;
-        padding: 1rem 1rem 0rem 1rem;
-    }
-    &__p {
-        display: flex;
-        justify-content: center;
-        padding: 0rem 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+        &__title {
+            padding: 1rem 1rem 0rem 1rem;
+        }
+        &__p {
+            width: 80%;
+            padding: 0rem 1.5rem;
+        }
 }
 
 .title {

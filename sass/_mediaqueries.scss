@@ -3,6 +3,13 @@
         font-size: $secondary-fontSize;
     }
 
+    .main {
+        margin-top: 0rem;
+            &__p {
+                width: 100%;
+            }
+    }
+
     .aboutMe {
         flex-direction: column-reverse;
             p {
@@ -83,6 +90,16 @@
 @media (min-width: 320px) and (max-width: 540px) {
     .main__title {
         padding: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    .main {
+        margin-top: 0rem;
+            &__p {
+                width: 100%;
+            }
+            &__iframe {
+                width: 90vw;
+            }
     }
     
     h1 {
