@@ -88,12 +88,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
-    .main__title {
-        padding: 1rem 1.5rem 0rem 1.5rem;
-    }
-
     .main {
         margin-top: 0rem;
+            &__title {
+                padding: 1rem 1.5rem 0rem 1.5rem;
+            }
             &__p {
                 width: 100%;
             }
