@@ -4,4 +4,4 @@ Este proyecto se realizó durante la cursada de *Desarrollo Web*, dictado por *C
 Consiste en un **Sitio Web Responsive** conformado por 5 páginas.
 Las tecnologías utilizadas en el mismo fueron: **Html, Css (Box Modeling, Flexbox y Grids), Framework Css: Bootstrap, Preprocesador Css: SASS.**
 
-[img](https://https://alesouz4.github.io/riniyoga/)[img]
+![img](https://https://alesouz4.github.io/riniyoga/)
