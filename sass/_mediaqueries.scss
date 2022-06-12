@@ -102,15 +102,15 @@
     }
     
     h1 {
-        font-size: $small-fontSize;
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     
     p {
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
 
     .aboutMe {
@@ -118,7 +118,7 @@
             p {
                 width: 100vw;
                 padding: 0.6rem 1.5rem;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
     }
     
@@ -157,8 +157,11 @@
                                     img {
                                         width: 30vw;
                                     }
+                                    h2 {
+                                        font-size: 0.95rem;
+                                    }
                                     p {
-                                        font-size: 0.8rem;
+                                        font-size: 0.9rem;
                                     }
                                 }
     }    
@@ -189,6 +192,10 @@
 
     .location__iframe {
         width: 70vw;
+    }
+
+    footer {
+        margin-top: 2rem;
     }
 }
 

@@ -1,0 +1,17 @@
+@mixin titulos ($color, $font-size) {
+    color: $color;
+    font-weight: bold;
+    font-size: $font-size;
+    font-family: $principal-font;
+}
+
+.selection {
+    &::selection {
+        background-color:#e2dbe6;
+    }
+}
+
+.formItems {
+    margin: 0.3rem;
+    padding: 0.6rem;
+}
